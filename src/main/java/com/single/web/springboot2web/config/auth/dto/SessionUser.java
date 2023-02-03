@@ -3,8 +3,10 @@ package com.single.web.springboot2web.config.auth.dto;
 import com.single.web.springboot2web.domain.user.User;
 import lombok.Getter;
 
+import java.io.Serializable;
+
 @Getter
-public class SessionUser {
+public class SessionUser implements Serializable {
     private String name;
     private String email;
     private String picture;
